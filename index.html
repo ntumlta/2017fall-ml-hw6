@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="author" content="sunprinceS" >
+<meta property="og:image" content="joy.png"/>
+<!--<meta property="og:image" content="http://www.themainstreetmouse.com/wp-content/uploads/2015/06/inhinh657551-613x345-150x150.jpg"/>-->
+<title>Machine Learning HW4 (2017, Fall)</title>
+
+<xmp theme="cerulean" style="display:none;">
+# Assignment #4 Text Sentiment Classification
+
+<hr>
+### Announcement
+
+* Kaggle Deadline: 2017/12/7 11:59 P.M. (GMT+8)
+* Github Deadline: 2017/12/8 11:59 P.M. (GMT+8)
+* TA會於11/30釋出範例程式碼，亦為超過 Kaggle simple baseline 的加分截止期限
+
+<hr>
+### Link
+* 投影片連結 <a href="https://docs.google.com/presentation/d/1HnyZowEamy8N4cUT0gY4aoRZuBTluIuoe8uYQdFxhI0/edit?usp=sharing" target="_blank"><i class="fa fa-slideshare"></i></a>
+* Kaggle 連結 <a href="https://www.kaggle.com/t/98e81d1542fe47e092d3e102dfe42360" target="_blank"><i class="fa fa-trophy"></i></a>
+* 遲交表單 <a href="https://goo.gl/forms/y5KQA5Cq6Sn8Wuxg2" target="_blank"><i class="fa fa-file-text"></i></a>
+* 小老師申請表單 <a href="https://goo.gl/forms/vi8RbHKATZNkwHS42" target="_blank"><i class="fa fa-file-text"></i></a>
+* report template <a href="https://goo.gl/vb6Baq" target="_blank"><i class="fa fa-file-text"></i></a>
+  
+<hr>
+### <a href="./RNN_model.html" target="_blank">Sample code</a> 
+  
+<hr>
+### Report
+#### P1: 請說明你實作的 RNN model，其模型架構、訓練過程和準確率為何？ (1%)
+* 作業要求: 請將你的model 架構(summery)、訓練細節(ex. epoch、optimizer、loss fuction...)與準確率附上。
+  
+#### P2: 請說明你實作的 BOW model，其模型架構、訓練過程和準確率為何？(1%)
+* 作業要求: 同上。
+  
+#### P3: 請比較bag of word與RNN兩種不同model對於"today is a good day, but it is hot"與"today is hot, but it is a good day"這兩句的情緒分數，並討論造成差異的原因。(1%)
+* 作業要求: 請附上兩個model對這兩句的prediction(不是label), 並討論原因。
+  
+#### P4: 請比較"有無"包含標點符號兩種不同tokenize的方式，並討論兩者對準確率的影響。(1%)
+* 作業要求: 請附上在RNN model上, 兩種不同tokenize方式的準確率, 並討論原因。
+  
+#### P5: 請描述在你的semi-supervised方法是如何標記label，並比較有無semi-surpervised training對準確率的影響。(1%)
+* 作業要求: 請說明如何標記unlabel data的label, 附上兩者在RNN model 上的準確率, 並討論原因。
+  
+<hr>
+### Rules
+* Basic : No extra dataset.
+* Only toolkits below are allowed to use :
+  + Python 3.5+
+  + tensorflow 1.3
+  + keras 2.0.8
+  + pytorch 0.2.0
+  + gensim, GloVe
+  + Numpy, Pandas 0.20+, Python Standard Lib...
+
+</xmp>
+</xmp> <script src="strapdown.js"></script> </html>
+<footer>
+  <center><a href="./index.html"><i class="fa fa-home"></i></a></center>
+  <center><i class="fa fa-github"></i></a> Posted by: <a href="https://github.com/ntumlta/" target="_blank">ntumlta</a> </center>
+  <center><i class="fa fa-envelope"></i> Contact information: <a href="mailto:"> ntu.mlta@gmail.com </a>.</center>
+  <center><i class="fa fa-mortar-board"></i> Course information: <a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML17_2.html", target="_blank">Machine Learning (2017, Fall) @ National Taiwan University</a>.</center>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59748795-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
