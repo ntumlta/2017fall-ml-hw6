@@ -6,56 +6,66 @@
 <meta name="author" content="sunprinceS" >
 <meta property="og:image" content="joy.png"/>
 <!--<meta property="og:image" content="http://www.themainstreetmouse.com/wp-content/uploads/2015/06/inhinh657551-613x345-150x150.jpg"/>-->
-<title>Machine Learning HW4 (2017, Fall)</title>
+<title>Machine Learning HW6 (2017, Fall)</title>
 
 <xmp theme="cerulean" style="display:none;">
-# Assignment #4 Text Sentiment Classification
+# Assignment #6 Unsupervised learning \& dimension reduction
 
 <hr>
 ### Announcement
 
-* Kaggle Deadline: 2017/12/7 11:59 P.M. (GMT+8)
-* Github Deadline: 2017/12/8 11:59 P.M. (GMT+8)
-* TA會於11/30釋出範例程式碼，亦為超過 Kaggle simple baseline 的加分截止期限
+* Kaggle Deadline: 2018/1/11 11:59 P.M. (GMT+8)
+* Github Deadline: 2017/1/12 11:59 P.M. (GMT+8)
+* TA 會於 2018/1/5 00:00 A.M. (GMT+8) 釋出範例程式碼，亦為超過 Kaggle simple baseline 的加分截止期限
 
 <hr>
 ### Link
-* 投影片連結 <a href="https://docs.google.com/presentation/d/1HnyZowEamy8N4cUT0gY4aoRZuBTluIuoe8uYQdFxhI0/edit?usp=sharing" target="_blank"><i class="fa fa-slideshare"></i></a>
-* Kaggle 連結 <a href="https://www.kaggle.com/t/98e81d1542fe47e092d3e102dfe42360" target="_blank"><i class="fa fa-trophy"></i></a>
-* 遲交表單 <a href="https://goo.gl/forms/y5KQA5Cq6Sn8Wuxg2" target="_blank"><i class="fa fa-file-text"></i></a>
-* 小老師申請表單 <a href="https://goo.gl/forms/vi8RbHKATZNkwHS42" target="_blank"><i class="fa fa-file-text"></i></a>
-* report template <a href="https://goo.gl/vb6Baq" target="_blank"><i class="fa fa-file-text"></i></a>
+* 投影片連結 <a href="https://docs.google.com/presentation/d/1v2aJnjqplnQ5YSprp6IXbWM_VPavtolqpgbGWM4HidY" target="_blank"><i class="fa fa-slideshare"></i></a>
+* Kaggle 連結 <a href="https://www.kaggle.com/c/ml-2017fall-hw6" target="_blank"><i class="fa fa-trophy"></i></a>
+* code 遲交表單 <a href="https://goo.gl/forms/U739TuuKJE3QDdWb2" target="_blank"><i class="fa fa-file-text"></i></a>
+* github 遲交表單 <a href="https://goo.gl/forms/ulB0FqGngd8cmvjf2" target="_blank"><i class="fa fa-file-text"></i></a>
+* 小老師申請表單 <a href="https://goo.gl/forms/xSn2IjAaXMbouE733" target="_blank"><i class="fa fa-file-text"></i></a>
+* report template <a href="https://docs.google.com/document/d/13c6RqKvcYdSBMxq4yFljUUDnj5fXmv9cGa01yfFwcFU/edit?usp=sharing" target="_blank"><i class="fa fa-file-text"></i></a>
   
 <hr>
-### <a href="./RNN_model.html" target="_blank">Sample code</a> 
+<!-- ### <a href="" target="_blank">Sample code</a>  -->
   
 <hr>
 ### Report
-#### P1: 請說明你實作的 RNN model，其模型架構、訓練過程和準確率為何？ (1%)
-* 作業要求: 請將你的model 架構(summery)、訓練細節(ex. epoch、optimizer、loss fuction...)與準確率附上。
+#### Part A: PCA of colored faces
+* 作業要求:
+(.5%) 請畫出所有臉的平均。
+(.5%) 請畫出前四個 Eigenfaces，也就是對應到前四大 Eigenvalues 的 Eigenvectors。
+(.5%) 請從數據集中挑出任意四個圖片，並用前四大 Eigenfaces 進行 reconstruction，並畫出結果。
+(.5%) 請寫出前四大 Eigenfaces 各自所佔的比重 (explained variance ratio)，請四捨五入到小數點後一位。
   
-#### P2: 請說明你實作的 BOW model，其模型架構、訓練過程和準確率為何？(1%)
-* 作業要求: 同上。
+#### Part B: Visualization of Chinese word embedding
+* 作業要求:
+(.6%) 請說明你用哪一個 word2vec 套件，並針對你有調整的參數說明那個參數的意義。
+(.7%) 請在 Report 上放上你 visualization 的結果。
+(.7%) 請討論你從 visualization 的結果觀察到什麼。
   
-#### P3: 請比較bag of word與RNN兩種不同model對於"today is a good day, but it is hot"與"today is hot, but it is a good day"這兩句的情緒分數，並討論造成差異的原因。(1%)
-* 作業要求: 請附上兩個model對這兩句的prediction(不是label), 並討論原因。
-  
-#### P4: 請比較"有無"包含標點符號兩種不同tokenize的方式，並討論兩者對準確率的影響。(1%)
-* 作業要求: 請附上在RNN model上, 兩種不同tokenize方式的準確率, 並討論原因。
-  
-#### P5: 請描述在你的semi-supervised方法是如何標記label，並比較有無semi-surpervised training對準確率的影響。(1%)
-* 作業要求: 請說明如何標記unlabel data的label, 附上兩者在RNN model 上的準確率, 並討論原因。
-  
+#### Part C: Image clustering
+* 作業要求:
+(.8%) 請比較至少兩種不同的 feature extraction 及其結果。
+(.6%) 請根據自己model的預測的 label，在平面上視覺化 label 的分佈並放在 Report 上。
+(.6%) 請根據公佈的 label，在平面上視覺化 label 的分佈並放在 Report 上，接著比較和自己預測的 label 之間有何不同？
+
+
+
 <hr>
 ### Rules
-* Basic : No extra dataset.
+* Basic : No extra dataset. No plagiarism.
 * Only toolkits below are allowed to use :
   + Python 3.5+
   + tensorflow 1.3
   + keras 2.0.8
   + pytorch 0.2.0
-  + gensim, GloVe
-  + Numpy, Pandas 0.20+, Python Standard Lib...
+  + scikit-image 0.13.1
+  + scikit-learn 0.19.1 (only in image clustering)
+  + jieba, gensim, GloVe, matplotlib, h5py
+  + Numpy, Pandas 0.20+
+  + Python Standard Lib
 
 </xmp>
 </xmp> <script src="strapdown.js"></script> </html>
