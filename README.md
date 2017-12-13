@@ -23,6 +23,7 @@
   
 #### Part C: Image clustering
 * 作業要求: 
+
 (.8%) 請比較至少兩種不同的 feature extraction 及其結果。
 
 (.6%) 請根據自己 model 的預測的 label，在平面上視覺化 label 的分佈並放在 Report 上。
